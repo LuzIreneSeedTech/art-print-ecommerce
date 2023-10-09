@@ -1,5 +1,15 @@
+import Banner from "../components/Banner";
+
 function HomePage() {
-  return "this is the home page";
+  const bannerContent = {
+    content: "your source for all wall-worthy art",
+  };
+
+  return (
+    <>
+      <Banner landingBanner>your source for wall-worthy art</Banner>
+    </>
+  );
 }
 
 export default HomePage;

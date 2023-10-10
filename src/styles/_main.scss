@@ -51,4 +51,31 @@
     div {
         line-height: 1.2;
     }
+
+    position: relative;
+}
+
+// button
+.button-var-1 {
+    @include button;
+    background: $main-color;
+    color: $secondary-color !important;
+}
+
+.button-var-2 {
+    @include button;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+    background: $main-color;
+}
+
+.button-var-3 {
+    @include button;
+    background: $secondary-color;
+    color: $main-color;
+}
+
+.landing-button {
+    position: absolute;
+    top: 60%;
 }

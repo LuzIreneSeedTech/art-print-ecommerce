@@ -18,7 +18,7 @@ function App() {
     window.addEventListener("popstate", handler);
 
     return () => {
-      window.removeEventListner("popstate", handler);
+      window.removeEventListener("popstate", handler);
     };
   }, []);
 

@@ -1,3 +1,4 @@
+import "./styles/style.css";
 import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
 import Route from "./components/Route";

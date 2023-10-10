@@ -2,12 +2,19 @@ import Banner from "../components/Banner";
 
 function HomePage() {
   const bannerContent = {
-    content: "your source for all wall-worthy art",
+    content: (
+      <div>
+        your source for
+        <br /> wall-worthy art
+      </div>
+    ),
   };
 
   return (
     <>
-      <Banner landingBanner>your source for wall-worthy art</Banner>
+      <Banner landingBanner image={bannerContent.image}>
+        {bannerContent.content}
+      </Banner>
     </>
   );
 }

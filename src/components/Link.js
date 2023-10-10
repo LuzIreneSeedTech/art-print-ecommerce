@@ -1,9 +1,9 @@
 import className from "classnames";
 
 function Link({ children, orientation, to, navigate }) {
-  const classes = className("mx-4 tracking-wide", {
-    "text-xl font-semibold uppercase mx-96 px-16": orientation === "center",
-    "text-base": orientation === "left" && orientation === "right",
+  const classes = className("link", {
+    "logo-navbar": orientation === "center",
+    "nav-link-item": orientation === "left" && orientation === "right",
   });
 
   const handleClick = (event) => {

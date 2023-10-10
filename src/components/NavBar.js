@@ -36,11 +36,7 @@ function NavBar({ navigate }) {
     );
   });
 
-  return (
-    <div className="flex items-center justify-center py-2.5">
-      {renderedLinks}
-    </div>
-  );
+  return <div className="navbar">{renderedLinks}</div>;
 }
 
 export default NavBar;

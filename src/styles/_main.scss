@@ -1,0 +1,54 @@
+* {
+    @include css-reset
+}
+
+// navbar
+.navbar {
+    @include flex-center;
+    justify-content: space-between !important;
+    margin: 0 50px;
+    padding: 15px 0;
+
+    .link {
+        margin: 0 12px;
+        letter-spacing: 0.025em;
+    }
+
+    .logo-navbar {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .nav-link-item {
+        font-size: 16px;
+    }
+}
+
+// landing page
+.banner-component {
+    font-size: 45px;
+    font-weight: 500;
+    color: $main-color;
+    text-transform: capitalize;
+
+    height: 100vh;
+    width: 97vw;
+    margin: auto;
+    border-radius: 7px;
+
+    @include flex-center;
+}
+
+.landing-background {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.30),
+            rgba(0, 0, 0, 0.35)), url('../assests/landingImage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    div {
+        line-height: 1.2;
+    }
+}

@@ -8,6 +8,7 @@ import ShopPage from "./pages/ShopPage";
 import CheckoutPage from "./pages/CheckoutPage";
 
 function App() {
+  //navigation start
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
 
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
     window.history.pushState({}, "", to);
     setCurrentPath(to);
   };
+  //navigation end
 
   return (
     <div>

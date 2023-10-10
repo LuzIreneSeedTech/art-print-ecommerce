@@ -32,7 +32,6 @@
     color: $main-color;
     text-transform: capitalize;
 
-    height: 100vh;
     width: 97vw;
     margin: auto;
     border-radius: 7px;
@@ -53,6 +52,7 @@
     }
 
     position: relative;
+    height: 100vh;
 }
 
 // button
@@ -78,4 +78,25 @@
 .landing-button {
     position: absolute;
     top: 60%;
+}
+
+.sub-banner {
+    @include flex-center;
+    gap: 85px;
+    padding: 50px 0;
+
+    .sub-banner-content {
+        @include flex-center;
+        gap: 17px;
+        width: 18%;
+
+        .content-item {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .content {
+            font-size: 14px;
+        }
+    }
 }

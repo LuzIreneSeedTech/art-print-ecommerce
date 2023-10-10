@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import Button from "../components/Button";
 
 function HomePage() {
   const bannerContent = {
@@ -8,12 +9,16 @@ function HomePage() {
         <br /> wall-worthy art
       </div>
     ),
+    buttonLabel: "shop now",
   };
 
   return (
     <>
-      <Banner landingBanner image={bannerContent.image}>
+      <Banner landingBanner>
         {bannerContent.content}
+        <Button button1 className="landing-button">
+          {bannerContent.buttonLabel}
+        </Button>
       </Banner>
     </>
   );
